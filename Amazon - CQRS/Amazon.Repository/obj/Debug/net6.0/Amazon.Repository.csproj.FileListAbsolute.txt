@@ -1,0 +1,14 @@
+D:\Test-Api\Amazon\Amazon.Repository\bin\Debug\net6.0\Amazon.Repository.deps.json
+D:\Test-Api\Amazon\Amazon.Repository\bin\Debug\net6.0\Amazon.Repository.runtimeconfig.json
+D:\Test-Api\Amazon\Amazon.Repository\bin\Debug\net6.0\Amazon.Repository.dll
+D:\Test-Api\Amazon\Amazon.Repository\bin\Debug\net6.0\Amazon.Repository.pdb
+D:\Test-Api\Amazon\Amazon.Repository\obj\Debug\net6.0\Amazon.Repository.csproj.AssemblyReference.cache
+D:\Test-Api\Amazon\Amazon.Repository\obj\Debug\net6.0\Amazon.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test-Api\Amazon\Amazon.Repository\obj\Debug\net6.0\Amazon.Repository.AssemblyInfoInputs.cache
+D:\Test-Api\Amazon\Amazon.Repository\obj\Debug\net6.0\Amazon.Repository.AssemblyInfo.cs
+D:\Test-Api\Amazon\Amazon.Repository\obj\Debug\net6.0\Amazon.Repository.csproj.CoreCompileInputs.cache
+D:\Test-Api\Amazon\Amazon.Repository\obj\Debug\net6.0\Amazon.Repository.dll
+D:\Test-Api\Amazon\Amazon.Repository\obj\Debug\net6.0\refint\Amazon.Repository.dll
+D:\Test-Api\Amazon\Amazon.Repository\obj\Debug\net6.0\Amazon.Repository.pdb
+D:\Test-Api\Amazon\Amazon.Repository\obj\Debug\net6.0\Amazon.Repository.genruntimeconfig.cache
+D:\Test-Api\Amazon\Amazon.Repository\obj\Debug\net6.0\ref\Amazon.Repository.dll

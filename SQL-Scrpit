@@ -1,0 +1,121 @@
+-------------------------------------------------------------------------SQL Queries-----------------------------------------------------------------------
+
+CREATE DATABASE Amazon
+go 
+use Amazon
+go
+
+-- User Table
+CREATE TABLE Users (
+    UserId INT PRIMARY KEY,
+    UserName VARCHAR(50),
+    Email VARCHAR(100)
+);
+
+-- Item Table
+CREATE TABLE Items (
+    ItemId INT PRIMARY KEY,
+    ItemName VARCHAR(100),
+    Price DECIMAL(10, 2)
+);
+
+-- Inventory Table
+CREATE TABLE Inventory (
+    InventoryId INT PRIMARY KEY,
+    ItemId INT,
+    StockQuantity INT,
+    FOREIGN KEY (ItemId) REFERENCES Items(ItemId)
+);
+
+-- Courier Table
+CREATE TABLE Couriers (
+    CourierId INT PRIMARY KEY,
+    CourierName VARCHAR(50)
+);
+
+-- Order Table
+CREATE TABLE Orders (
+    OrderId INT PRIMARY KEY,
+    UserId INT,
+    CourierId INT,
+    OrderDate DATETIME,
+    FOREIGN KEY (UserId) REFERENCES Users(UserId),
+    FOREIGN KEY (CourierId) REFERENCES Couriers(CourierId)
+);
+
+-- Order-Item Mapping Table (Many-to-Many)
+CREATE TABLE OrderItems (
+    OrderId INT,
+    InventoryId INT,
+    Quantity INT,
+    PRIMARY KEY (OrderId, InventoryId),
+    FOREIGN KEY (OrderId) REFERENCES Orders(OrderId),
+    FOREIGN KEY (InventoryId) REFERENCES Inventory(InventoryId)
+);
+
+-- Insert Users
+INSERT INTO Users (UserId, UserName, Email) VALUES
+(3, 'John Doe', 'john.doe@example.com'),
+(4, 'Jane Smith', 'jane.smith@example.com'),
+(5, 'Alice Johnson', 'alice.johnson@example.com'),
+(6, 'Bob Williams', 'bob.williams@example.com'),
+(7, 'Emily Brown', 'emily.brown@example.com'),
+(8, 'Michael Lee', 'michael.lee@example.com'),
+(9, 'Sophia Davis', 'sophia.davis@example.com'),
+(10, 'Oliver Wilson', 'oliver.wilson@example.com');
+
+-- Insert Items 
+INSERT INTO Items (ItemId, ItemName, Price) VALUES
+(3, 'Laptop', 800.00),
+(4, 'Smartphone', 400.00),
+(5, 'Headphones', 50.00),
+(6, 'Tablet', 300.00),
+(7, 'Camera', 600.00),
+(8, 'Printer', 200.00),
+(9, 'External Hard Drive', 100.00),
+(10, 'Monitor', 200.00);
+
+--Insert Inventory 
+INSERT INTO Inventory (InventoryId, ItemId, StockQuantity) VALUES
+(3, 3, 20),
+(4, 4, 30),
+(5, 5, 100),
+(6, 6, 15),
+(7, 7, 10),
+(8, 8, 25),
+(9, 9, 50),
+(10, 10, 40);
+
+--Insert Couriers 
+INSERT INTO Couriers (CourierId, CourierName) VALUES
+(3, 'Express Shipping'),
+(4, 'Standard Shipping');
+
+--Insert Orders
+INSERT INTO Orders (OrderId, UserId, CourierId, OrderDate) VALUES
+(3, 3, 3, '2023-09-30'),
+(4, 4, 4, '2023-09-30'),
+(5, 5, 3, '2023-10-01'),
+(6, 6, 4, '2023-10-01'),
+(7, 7, 3, '2023-10-02'),
+(8, 8, 4, '2023-10-02'),
+(9, 9, 3, '2023-10-03'),
+(10, 10, 4, '2023-10-03');
+
+--Insert Order-Item
+INSERT INTO OrderItems (OrderId, InventoryId, Quantity) VALUES
+(3, 3, 2),
+(3, 4, 1),
+(3, 5, 3),
+(4, 6, 2),
+(4, 7, 1),
+(4, 8, 3),
+(5, 9, 2),
+(5, 10, 1),
+(6, 3, 2),
+(6, 4, 1),
+(7, 5, 2),
+(7, 6, 1);
+
+
+--------------------------------------------------

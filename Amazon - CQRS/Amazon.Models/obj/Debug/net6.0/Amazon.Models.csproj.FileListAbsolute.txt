@@ -1,0 +1,12 @@
+D:\Test-Api\Amazon\Amazon.Models\bin\Debug\net6.0\Amazon.Models.deps.json
+D:\Test-Api\Amazon\Amazon.Models\bin\Debug\net6.0\Amazon.Models.dll
+D:\Test-Api\Amazon\Amazon.Models\bin\Debug\net6.0\Amazon.Models.pdb
+D:\Test-Api\Amazon\Amazon.Models\obj\Debug\net6.0\Amazon.Models.csproj.AssemblyReference.cache
+D:\Test-Api\Amazon\Amazon.Models\obj\Debug\net6.0\Amazon.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test-Api\Amazon\Amazon.Models\obj\Debug\net6.0\Amazon.Models.AssemblyInfoInputs.cache
+D:\Test-Api\Amazon\Amazon.Models\obj\Debug\net6.0\Amazon.Models.AssemblyInfo.cs
+D:\Test-Api\Amazon\Amazon.Models\obj\Debug\net6.0\Amazon.Models.csproj.CoreCompileInputs.cache
+D:\Test-Api\Amazon\Amazon.Models\obj\Debug\net6.0\Amazon.Models.dll
+D:\Test-Api\Amazon\Amazon.Models\obj\Debug\net6.0\refint\Amazon.Models.dll
+D:\Test-Api\Amazon\Amazon.Models\obj\Debug\net6.0\Amazon.Models.pdb
+D:\Test-Api\Amazon\Amazon.Models\obj\Debug\net6.0\ref\Amazon.Models.dll
