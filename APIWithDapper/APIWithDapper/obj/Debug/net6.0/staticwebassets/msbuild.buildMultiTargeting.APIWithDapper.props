@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\APIWithDapper.props" />
+</Project>
